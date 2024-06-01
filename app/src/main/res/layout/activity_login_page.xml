@@ -12,21 +12,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/logo_sti" />
+            android:src="@drawable/logo_sti"
+            android:contentDescription="@string/sti_logo"/>
 
         <EditText
             android:id="@+id/email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
+            android:autofillHints="email"
             android:background="@drawable/round_corner"
-            android:hint="E-mail"
-            android:inputType="text"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
             android:padding="18dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
@@ -37,23 +43,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:autofillHints="password"
             android:background="@drawable/round_corner"
-            android:hint="Password"
-            android:inputType="text"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
             android:padding="18dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/login_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:backgroundTint="@color/white"
-            android:padding="18dp"
-            android:text="Login"
-            android:textColor="@color/black"
             android:textSize="20sp" />
 
     </LinearLayout>
@@ -63,15 +59,27 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
-        android:layout_marginRight="120dp"
-        android:text="Remember Me"
+        android:layout_marginEnd="120dp"
+        android:text="@string/remember_me"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.849" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:padding="18dp"
+        android:text="@string/log_in"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="611dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
