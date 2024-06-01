@@ -19,6 +19,12 @@ public class activity_main extends AppCompatActivity {
 
         Button buttonBack = findViewById(R.id.button_back);
         Button buttonNext = findViewById(R.id.button_next);
+        Button SoftEng = findViewById(R.id.SE);
+        Button CS = findViewById(R.id.CyberSec);
+        Button Methods = findViewById(R.id.MoR);
+        Button Quanti = findViewById(R.id.QM);
+        Button PhyEd = findViewById(R.id.PhysicalEdu);
+        Button ComProg = findViewById(R.id.ComProg);
 
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,5 +43,7 @@ public class activity_main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

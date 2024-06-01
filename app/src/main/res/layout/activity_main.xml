@@ -17,7 +17,8 @@
         android:scaleType="centerInside"
         android:src="@drawable/logo_sti"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="2dp" />
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints" />
 
     <View
         android:id="@+id/bottomLine"
@@ -56,20 +57,101 @@
         />
 
     <ImageView
-        android:id="@+id/BellIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:color="@color/white"
         android:src="@drawable/ic_notifications_black_24dp"
-        tools:layout_editor_absoluteX="341dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:color="@color/white"
+        android:paddingLeft="330dp"
+        android:paddingTop="25dp"
+        tools:ignore="MissingConstraints" />
+
 
     <ImageView
+        android:id="@+id/ArrowLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_arrow_down_24"
-        tools:layout_editor_absoluteX="371dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:color="@color/white"
+        android:paddingLeft="360dp"
+        android:paddingTop="25dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomLine">
+
+
+        <Button
+            android:id="@+id/SE"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Software Engineering"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+        <Button
+            android:id="@+id/CyberSec"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Cyber Security"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+        <Button
+            android:id="@+id/MoR"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Methods of Research"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+        <Button
+            android:id="@+id/ComProg"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Computer Programming 1"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+        <Button
+            android:id="@+id/PhysicalEdu"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Physical Education"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+        <Button
+            android:id="@+id/QM"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Quantitative methods"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+
+    </GridLayout>
 
     <Button
         android:id="@+id/button_back"
@@ -91,5 +173,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
