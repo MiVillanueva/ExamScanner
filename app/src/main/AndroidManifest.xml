@@ -21,7 +21,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scan"
         tools:targetApi="31">
-<activity
+        <activity
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
             android:name=".LoginPage"
             android:exported="true">
             <intent-filter>
@@ -34,14 +37,11 @@
             android:name=".activity_StudentNames"
             android:exported="true" />
 
-
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.scan.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />

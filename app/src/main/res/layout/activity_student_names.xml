@@ -59,8 +59,8 @@
         android:layout_width="59dp"
         android:layout_height="57dp"
         android:layout_marginStart="4dp"
-        android:src="@drawable/sti_logo"
         android:contentDescription="@string/sti_logo"
+        android:src="@drawable/sti_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
