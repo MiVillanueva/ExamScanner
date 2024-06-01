@@ -52,6 +52,7 @@
         <activity
             android:name=".QuantiSection"
             android:exported="true" />
+
         <activity
             android:name=".StudentNames"
             android:exported="true" />
