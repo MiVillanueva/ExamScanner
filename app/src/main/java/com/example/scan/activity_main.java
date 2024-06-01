@@ -44,7 +44,7 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Define the action for Methods button
-                Intent intent = new Intent(activity_main.this, StudentNames.class);
+                Intent intent = new Intent(activity_main.this, MethodsSection.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +52,7 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Define the action for Quanti button
-                Intent intent = new Intent(activity_main.this, StudentNames.class);
+                Intent intent = new Intent(activity_main.this, QuantiSection.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Define the action for PhyEd button
-                Intent intent = new Intent(activity_main.this, StudentNames.class);
+                Intent intent = new Intent(activity_main.this, PhyEdSection.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +70,7 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Define the action for ComProg button
-                Intent intent = new Intent(activity_main.this, StudentNames.class);
+                Intent intent = new Intent(activity_main.this, ComprogSection.class);
                 startActivity(intent);
             }
         });

@@ -35,10 +35,22 @@
             android:name=".activity_main"
             android:exported="true" />
         <activity
+            android:name=".MethodsSection"
+            android:exported="true" />
+        <activity
             android:name=".CyberSecSection"
             android:exported="true" />
         <activity
+            android:name=".ComprogSection"
+            android:exported="true" />
+        <activity
             android:name=".SoftEngSection"
+            android:exported="true" />
+        <activity
+            android:name=".PhyEdSection"
+            android:exported="true" />
+        <activity
+            android:name=".QuantiSection"
             android:exported="true" />
         <activity
             android:name=".StudentNames"
