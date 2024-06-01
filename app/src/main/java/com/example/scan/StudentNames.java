@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class activity_StudentNames extends AppCompatActivity {
+public class StudentNames extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class activity_StudentNames extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to navigate to the activity_student_names
-                Intent intent = new Intent(activity_StudentNames.this, Scanner.class);
+                Intent intent = new Intent(StudentNames.this, Scanner.class);
                 startActivity(intent); // Start the activity_student_names
             }
         });
@@ -41,7 +41,7 @@ public class activity_StudentNames extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Create an Intent to navigate to the activity_student_names
-                Intent intent = new Intent(activity_StudentNames.this, LoginPage.class);
+                Intent intent = new Intent(StudentNames.this, LoginPage.class);
                 startActivity(intent); // Start the activity_student_names
             }
         });
