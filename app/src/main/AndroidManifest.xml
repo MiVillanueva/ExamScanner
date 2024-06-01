@@ -32,11 +32,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".StudentNames"
-            android:exported="true" />
-        <activity
             android:name=".MainPage"
             android:exported="true" />
+
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -47,7 +45,9 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
+        <activity
+            android:name=".StudentNames"
+            android:exported="true" />
         <activity
             android:name=".Scanner"
             android:exported="true" />

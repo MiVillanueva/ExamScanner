@@ -50,7 +50,7 @@ public class LoginPage extends AppCompatActivity {
                 String username = usernameInput.getText().toString().trim();
                 String password = passwordInput.getText().toString().trim();
 
-                if (isValidCredentials(username, password)) {
+                if(isValidCredentials(username, password)){
                     Intent intent = new Intent(LoginPage.this, MainPage.class);
                     startActivity(intent);
                 } else {

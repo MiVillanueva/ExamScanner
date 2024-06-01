@@ -31,7 +31,7 @@ public class MainPage extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create an Intent to navigate to the activity_student_names
+                // Create an Intent to navigate to the StudentNames
                 Intent intent = new Intent(MainPage.this, StudentNames.class);
                 startActivity(intent); // Start the MainPage
             }
