@@ -28,7 +28,7 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Define the action for SoftEng button
-                Intent intent = new Intent(activity_main.this, StudentNames.class);
+                Intent intent = new Intent(activity_main.this, SoftEngSection.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Define the action for CS button
-                Intent intent = new Intent(activity_main.this, StudentNames.class);
+                Intent intent = new Intent(activity_main.this, CyberSecSection.class);
                 startActivity(intent);
             }
         });

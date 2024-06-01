@@ -35,8 +35,15 @@
             android:name=".activity_main"
             android:exported="true" />
         <activity
+            android:name=".CyberSecSection"
+            android:exported="true" />
+        <activity
+            android:name=".SoftEngSection"
+            android:exported="true" />
+        <activity
             android:name=".StudentNames"
-            android:exported="false" />
+            android:exported="true" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.scan.fileprovider"
