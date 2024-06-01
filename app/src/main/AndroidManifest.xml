@@ -25,15 +25,14 @@
         <activity
             android:name=".LoginPage"
             android:exported="true">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainPage"
-            android:exported="true" />
 
 
         <provider
@@ -45,9 +44,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-        <activity
-            android:name=".StudentNames"
-            android:exported="true" />
+
         <activity
             android:name=".Scanner"
             android:exported="true" />
