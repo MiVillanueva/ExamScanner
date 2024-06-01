@@ -17,8 +17,7 @@ public class activity_main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonBack = findViewById(R.id.button_back);
-        Button buttonNext = findViewById(R.id.button_next);
+
         Button SoftEng = findViewById(R.id.SE);
         Button CS = findViewById(R.id.CyberSec);
         Button Methods = findViewById(R.id.MoR);
@@ -26,24 +25,57 @@ public class activity_main extends AppCompatActivity {
         Button PhyEd = findViewById(R.id.PhysicalEdu);
         Button ComProg = findViewById(R.id.ComProg);
 
-        buttonBack.setOnClickListener(new View.OnClickListener() {
+
+
+        SoftEng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Define the action for Back button
-                Intent intent = new Intent(activity_main.this, LoginPage.class);
+                //Define the action for SoftEng button
+                Intent intent = new Intent(activity_main.this, Scanner.class);
                 startActivity(intent);
             }
         });
-
-        buttonNext.setOnClickListener(new View.OnClickListener() {
+        CS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Define the action for Next button
+                //Define the action for CS button
+                Intent intent = new Intent(activity_main.this, Scanner.class);
+                startActivity(intent);
+            }
+        });
+        Methods.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Define the action for Methods button
+                Intent intent = new Intent(activity_main.this, Scanner.class);
+                startActivity(intent);
+            }
+        });
+        Quanti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Define the action for Quanti button
                 Intent intent = new Intent(activity_main.this, Scanner.class);
                 startActivity(intent);
             }
         });
 
+        PhyEd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Define the action for PhyEd button
+                Intent intent = new Intent(activity_main.this, Scanner.class);
+                startActivity(intent);
+            }
+        });
 
+        ComProg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Define the action for ComProg button
+                Intent intent = new Intent(activity_main.this, Scanner.class);
+                startActivity(intent);
+            }
+        });
     }
 }
