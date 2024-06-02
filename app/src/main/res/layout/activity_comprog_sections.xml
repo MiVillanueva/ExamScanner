@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_main"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/stilogo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/blue"
+        android:paddingRight="300dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_sti"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/CSText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Computer Programming 1"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coursesText"
+        />
+
+    <TextView
+        android:id="@+id/coursesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topLine"
+        />
+
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coursesText"
+        />
+
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="144dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:color="@color/white"
+        android:paddingLeft="330dp"
+        android:paddingTop="25dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ImageView
+        android:id="@+id/ArrowLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down_24"
+        android:color="@color/white"
+        android:paddingLeft="360dp"
+        android:paddingTop="25dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomLine">
+
+        <!-- Your buttons here -->
+        <Button
+            android:id="@+id/CS1"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="BSCS 101"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/CS2"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="BSCS 102"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/CS3"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="BSCS 201"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/CS4"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="BSCS 202"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/CS5"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="BSCS 601"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/CS6"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="BSCS 602"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
