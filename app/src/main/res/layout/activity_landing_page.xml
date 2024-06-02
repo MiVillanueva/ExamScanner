@@ -9,11 +9,12 @@
     android:background="@color/white">
 
     <ImageView
-        android:id="@+id/stilogo"
+        android:id="@+id/sti_logo"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:background="@color/blue"
-        android:paddingRight="300dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="300dp"
         android:scaleType="centerInside"
         android:src="@drawable/logo_sti"
         tools:layout_editor_absoluteX="0dp"
