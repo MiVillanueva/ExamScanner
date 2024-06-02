@@ -55,32 +55,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:background="#000080"
-        android:paddingBottom="2dp"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="60dp"
-        tools:ignore="MissingConstraints" />
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="59dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="4dp"
-        android:src="@drawable/sti_logo"
-        tools:layout_editor_absoluteY="3dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/sti_logo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/blue"
+        android:paddingStart="10dp"
+        android:paddingEnd="300dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_sti"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/sti_logo"/>
 
     <ImageView
         android:id="@+id/notificationBell"
