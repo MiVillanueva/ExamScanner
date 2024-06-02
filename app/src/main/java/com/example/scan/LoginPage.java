@@ -51,7 +51,7 @@ public class LoginPage extends AppCompatActivity {
                 String password = passwordInput.getText().toString().trim();
 
                 if(isValidCredentials(username, password)){
-                    Intent intent = new Intent(LoginPage.this, activity_LandingPage.class);
+                    Intent intent = new Intent(LoginPage.this, activity_main.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(LoginPage.this, "Invalid credentials. Please enter valid email and password.", Toast.LENGTH_LONG).show();

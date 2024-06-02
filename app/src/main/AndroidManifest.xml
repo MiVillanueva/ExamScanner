@@ -33,7 +33,7 @@
         </activity>
 
         <activity
-            android:name=".activity_LandingPage"
+            android:name=".LandingPage"
             android:exported="true" />
         <activity
             android:name=".activity_AddClass"
