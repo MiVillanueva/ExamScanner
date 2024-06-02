@@ -31,6 +31,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activity_LandingPage"
+            android:exported="true" />
+        <activity
+            android:name=".activity_AddClass"
+            android:exported="true" />
         <activity
             android:name=".activity_main"
             android:exported="true" />
@@ -52,7 +59,6 @@
         <activity
             android:name=".QuantiSection"
             android:exported="true" />
-
         <activity
             android:name=".StudentNames"
             android:exported="true" />

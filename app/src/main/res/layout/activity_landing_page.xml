@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_LandingPage">
+
+
+    <ImageView
+        android:id="@+id/stilogo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/blue"
+        android:paddingRight="300dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_sti"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:color="@color/white"
+        android:paddingLeft="330dp"
+        android:paddingTop="25dp"
+        tools:ignore="MissingConstraints"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/ArrowLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down_24"
+        android:color="@color/white"
+        android:paddingLeft="360dp"
+        android:paddingTop="25dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:paddingTop="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" >
+
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_gravity="fill"
+        android:text="Add Class"
+        android:textSize="20sp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="5sp"
+        />
+
+        <Button
+            android:id="@+id/text2"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Text"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Text"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Text"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="0dp"
+            android:layout_gravity="fill"
+            android:text="Scanner"
+            android:textSize="20sp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="0dp"
+        android:layout_gravity="fill"
+        android:text="Settings"
+        android:textSize="20sp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_margin="5sp"
+        />
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
