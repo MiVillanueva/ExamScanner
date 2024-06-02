@@ -7,7 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".activity_notifications">
 
-
+    <TextView
+        android:id="@+id/StudName"
+        android:layout_width="419dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_2"
+        android:paddingStart="10sp"
+        android:paddingTop="6dp"
+        android:paddingEnd="10sp"
+        android:text="Villanueva Miguel Irey\nSibal, Jairo\nVargas, Dayzerlyn\nBillones, Carl John\nCiacico, Koleen\nMarable, Bianca\nJose, Christian George\nPascual, Keith\nRoldan, Patricia\nThiarhia, Ramesh\nOctaviano, Gean"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sti_logo" />
 
     <ImageView
         android:id="@+id/sti_logo"
@@ -23,15 +37,6 @@
         tools:layout_editor_absoluteY="2dp"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="301dp"
-        android:layout_height="381dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dota2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
