@@ -43,11 +43,10 @@ public class activity_LandingPage extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.nav_notifications:
+                if (item.getItemId() == R.id.nav_notifications) {
                         // Handle notifications item selection
                         // For example, navigate to notifications activity
-                        Intent notificationsIntent = new Intent(activity_LandingPage.this, NotificationsActivity.class);
+                        Intent notificationsIntent = new Intent(activity_LandingPage.this, activity_notifications.class);
                         startActivity(notificationsIntent);
                         return true;
                     // Add cases for other menu items if needed

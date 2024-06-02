@@ -12,6 +12,7 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/add_class"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,6 +25,7 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/settings"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -42,10 +44,9 @@
         android:scaleType="centerInside"
         android:src="@drawable/logo_sti"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="2dp"
+        tools:layout_editor_absoluteY="0dp"
         tools:ignore="MissingConstraints"
         android:contentDescription="@string/sti_logo"/>
-
 
     <Button
         android:id="@+id/button2"
@@ -79,16 +80,15 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="420dp"
-        android:layout_height="60dp"
+        android:layout_width="410dp"
+        android:layout_height="60sp"
         app:backgroundTint="@color/blue"
-        app:menu="@menu/bottom_nav_menu"
         app:itemTextColor="@color/white"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="674dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:menu="@menu/bottom_nav_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

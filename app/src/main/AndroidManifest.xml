@@ -21,7 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scan"
         tools:targetApi="31">
-
+        <activity
+            android:name=".activity_notifications"
+            android:exported="false" />
         <activity
             android:name=".LoginPage"
             android:exported="true">
@@ -31,13 +33,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activity_LandingPage"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".activity_AddClass"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".activity_main"
             android:exported="true" />
@@ -64,7 +65,7 @@
             android:exported="true" />
         <activity
             android:name=".NotificationsActivity"
-            android:exported="true"/>
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
