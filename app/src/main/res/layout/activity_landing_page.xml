@@ -9,6 +9,30 @@
     android:background="@color/white">
 
     <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sti_logo"
+        app:layout_constraintVertical_bias="0.69"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
         android:id="@+id/sti_logo"
         android:layout_width="0dp"
         android:layout_height="65dp"
@@ -19,20 +43,9 @@
         android:src="@drawable/logo_sti"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="2dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/sti_logo"/>
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="136dp"
-        android:layout_height="137dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button2"
@@ -40,7 +53,7 @@
         android:layout_height="51dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/blue"
-        android:text="Add Class"
+        android:text="@string/add_class"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,25 +62,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.465" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="136dp"
-        android:layout_height="137dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <Button
         android:id="@+id/button3"
         android:layout_width="140dp"
         android:layout_height="51dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/blue"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

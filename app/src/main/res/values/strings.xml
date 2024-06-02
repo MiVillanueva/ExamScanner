@@ -43,6 +43,8 @@
     <string name="sti_logo">logo</string>
     <string name="scan">Scan</string>
     <string name="stud">Students</string>
+    <string name="add_class">Add Class</string>
+    <string name="settings">settings</string>
 
 
     <string name="lorem_ipsum">

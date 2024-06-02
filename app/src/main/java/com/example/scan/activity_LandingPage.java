@@ -18,8 +18,8 @@ public class activity_LandingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
 
-        Button scan = findViewById(R.id.scanner);
-        Button add = findViewById(R.id.add);
+        Button scan = findViewById(R.id.button3);
+        Button add = findViewById(R.id.button2);
 
         scan.setOnClickListener(new View.OnClickListener() {
             @Override
