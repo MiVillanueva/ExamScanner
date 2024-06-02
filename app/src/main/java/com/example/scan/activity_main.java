@@ -73,5 +73,8 @@ public class activity_main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Initialize BottomNavigationView
+
     }
 }
