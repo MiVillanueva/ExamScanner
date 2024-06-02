@@ -2,10 +2,11 @@ package com.example.scan;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import com.example.scan.R;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -23,7 +24,7 @@ public class activity_LandingPage extends AppCompatActivity {
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Define the action for scanner button
+                // Define the action for settings button
                 Intent intent = new Intent(activity_LandingPage.this, Scanner.class);
                 startActivity(intent);
             }
@@ -32,31 +33,27 @@ public class activity_LandingPage extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Define the action for scanner button
+                // Define the action for add button
                 Intent intent = new Intent(activity_LandingPage.this, activity_AddClass.class);
                 startActivity(intent);
             }
         });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.nav_notifications:
-                    // Handle Notification item selection
-                    return true;
-                case R.id.nav_home:
-                    // Handle home item selection
-                    return true;
-                case R.id.nav_scanner:
-                    // Handle scanner item selection
-                    return true;
-                case R.id.nav_profile:
-                    //Handle profile item selection
-                    return true;
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.nav_notifications:
+                        // Handle notifications item selection
+                        // For example, navigate to notifications activity
+                        Intent notificationsIntent = new Intent(activity_LandingPage.this, NotificationsActivity.class);
+                        startActivity(notificationsIntent);
+                        return true;
+                    // Add cases for other menu items if needed
+                }
+                return false;
             }
-            return false;
         });
-
-
     }
 }
