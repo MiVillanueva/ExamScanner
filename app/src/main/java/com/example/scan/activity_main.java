@@ -23,7 +23,6 @@ public class activity_main extends AppCompatActivity {
         Button ComProg = findViewById(R.id.ComProg);
 
 
-
         SoftEng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
