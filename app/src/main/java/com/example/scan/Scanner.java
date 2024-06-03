@@ -2,9 +2,13 @@ package com.example.scan;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -21,7 +25,6 @@ import java.util.Date;
 public class Scanner extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
-
     private ImageView imageView;
     private String currentPhotoPath;
 
@@ -36,6 +39,16 @@ public class Scanner extends AppCompatActivity {
         captureButton.setOnClickListener(v -> {
             dispatchTakePictureIntent();
         });
+
+        // Request permissions at runtime
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(this, new String[]{
+                    Manifest.permission.CAMERA,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE
+            }, 100);
+        }
     }
 
     private void dispatchTakePictureIntent() {

@@ -18,8 +18,8 @@ public class activity_LandingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing_page);
 
-        Button setting = findViewById(R.id.button3);
-        Button add = findViewById(R.id.button2);
+        Button setting = findViewById(R.id.button2);
+        Button add = findViewById(R.id.button3);
 
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,20 +39,7 @@ public class activity_LandingPage extends AppCompatActivity {
             }
         });
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.nav_notifications) {
-                        // Handle notifications item selection
-                        // For example, navigate to notifications activity
-                        Intent notificationsIntent = new Intent(activity_LandingPage.this, activity_notifications.class);
-                        startActivity(notificationsIntent);
-                        return true;
-                    // Add cases for other menu items if needed
-                }
-                return false;
-            }
-        });
+
+
     }
 }

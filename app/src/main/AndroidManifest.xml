@@ -21,9 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scan"
         tools:targetApi="31">
-        <activity
-            android:name=".activity_notifications"
-            android:exported="false" />
+
         <activity
             android:name=".LoginPage"
             android:exported="true">
@@ -63,10 +61,10 @@
         <activity
             android:name=".StudentNames"
             android:exported="true" />
-        <activity
-            android:name=".NotificationsActivity"
-            android:exported="true" />
 
+        <activity
+            android:name=".Scanner"
+            android:exported="true" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.scan.fileprovider"
@@ -77,9 +75,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity
-            android:name=".Scanner"
-            android:exported="true" />
+
     </application>
 
 </manifest>
