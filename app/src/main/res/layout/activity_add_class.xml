@@ -9,6 +9,8 @@
     tools:context=".activity_AddClass">
 
 
+
+
     <TextView
         android:id="@+id/ClassText"
         android:layout_width="0dp"
@@ -25,6 +27,63 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notifications_black_24dp"
+        android:color="@color/white"
+        android:paddingLeft="330dp"
+        android:paddingTop="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ArrowLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down_24"
+        android:color="@color/white"
+        android:paddingLeft="360dp"
+        android:paddingTop="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editClassName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="60dp"
+        android:hint="Enter Class Name"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/editClassId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Class ID"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editClassName"
+       app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/tvClassList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editClassId"
+        app:layout_constraintVertical_bias="0.1"
+        android:padding="16dp"
+        tools:text="Class List" />
 
     <Button
         android:id="@+id/button"
