@@ -24,7 +24,7 @@ public class activity_LandingPage extends AppCompatActivity {
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Define the action for settings button
+                // Define the action for scanner button
                 Intent intent = new Intent(activity_LandingPage.this, Scanner.class);
                 startActivity(intent);
             }
